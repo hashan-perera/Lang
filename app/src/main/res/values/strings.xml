@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lang</string>
+    <string name="btn_add_phrases">Add Phrases</string>
+    <string name="btn_display_phrases">Display Phrases</string>
+    <string name="btn_edit_phrases">Edit Phrases</string>
+    <string name="btn_language_subscription">Language Subscription</string>
+    <string name="btn_translate">Translate</string>
+</resources>
