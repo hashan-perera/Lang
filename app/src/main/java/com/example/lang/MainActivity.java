@@ -19,12 +19,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Log.d(TAG, "MainActivity");
 
-        DatabaseHelper myDb = new DatabaseHelper(this);
-        Button btn_add_phrases = findViewById(R.id.btn_add_phrases);
-        Button btn_display_phrases = findViewById(R.id.btn_display_phrases);
-        Button btn_edit_phrases = findViewById(R.id.btn_edit_phrases);
-        Button btn_language_subscription = findViewById(R.id.btn_language_subscription);
-        Button btn_translate = findViewById(R.id.btn_translate);
+        Button btn_add_phrases = (Button) findViewById(R.id.btn_add_phrases);
+        Button btn_display_phrases = (Button) findViewById(R.id.btn_display_phrases);
+        Button btn_edit_phrases = (Button) findViewById(R.id.btn_edit_phrases);
+        Button btn_language_subscription = (Button) findViewById(R.id.btn_language_subscription);
+        Button btn_translate = (Button) findViewById(R.id.btn_translate);
 
         btn_add_phrases.setOnClickListener(new View.OnClickListener() {
             @Override
