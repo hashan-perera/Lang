@@ -5,4 +5,6 @@
     <string name="btn_edit_phrases">Edit Phrases</string>
     <string name="btn_language_subscription">Language Subscription</string>
     <string name="btn_translate">Translate</string>
+    <string name="btn_save">save</string>
+    <string name="edit_text">Enter your word or phrase</string>
 </resources>

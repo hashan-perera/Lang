@@ -12,14 +12,15 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
+    DatabaseHelper myDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Log.d(TAG, "MainActivity");
 
+        myDb = new DatabaseHelper(this);
         Button btn_add_phrases = findViewById(R.id.btn_add_phrases);
         Button btn_display_phrases = findViewById(R.id.btn_display_phrases);
         Button btn_edit_phrases = findViewById(R.id.btn_edit_phrases);
