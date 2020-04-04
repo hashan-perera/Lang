@@ -2,7 +2,6 @@ package com.example.lang;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -19,7 +18,7 @@ public class AddPhrase extends AppCompatActivity {
         setContentView(R.layout.activity_add_phrase);
         Log.d(TAG, "AddPhrase");
 
-        DatabaseHelper myDb = new DatabaseHelper(this);
+        final DatabaseHelper myDb = new DatabaseHelper(this);
         final EditText txtInput = (EditText) findViewById(R.id.edit_text);
         Button btnSave = (Button) findViewById(R.id.btn_save);
 
