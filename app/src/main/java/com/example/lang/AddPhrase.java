@@ -2,6 +2,7 @@ package com.example.lang;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,14 +19,14 @@ public class AddPhrase extends AppCompatActivity {
         setContentView(R.layout.activity_add_phrase);
         Log.d(TAG, "AddPhrase");
 
-        final DatabaseHelper myDb = new DatabaseHelper(this);
+        DatabaseHelper myDb = new DatabaseHelper(this);
         final EditText txtInput = (EditText) findViewById(R.id.edit_text);
         Button btnSave = (Button) findViewById(R.id.btn_save);
 
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                boolean isInserted = myDb.instertData(txtInput.getText().toString());
+                boolean isInserted = myDb.insertData(txtInput.getText().toString());
                 if (isInserted)
                     Toast.makeText(AddPhrase.this, "Data added", Toast.LENGTH_SHORT).show();
                 else
