@@ -29,7 +29,10 @@ public class DisplayPhrase extends AppCompatActivity {
             Toast.makeText(DisplayPhrase.this, "No data to show", Toast.LENGTH_SHORT).show();
         } else {
             while (cursor.moveToNext()) {
-                listItem.add(cursor.getString(1));//index 1 is WORD/PHRASE ondex o is ID
+                listItem.add(cursor.getString(1));
+                /*
+                I've put columnIndex as '1' because index 1 is WORD/PHRASE index 0 is ID in the array
+                */
             }
             ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listItem);
             list.setAdapter(adapter);
