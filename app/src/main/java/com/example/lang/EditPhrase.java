@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.CheckedTextView;
 
 import java.util.ArrayList;
 
@@ -18,6 +19,7 @@ public class EditPhrase extends AppCompatActivity {
 
         DatabaseHelper myDb = new DatabaseHelper(this);
         ArrayList<String> listItem = new ArrayList<>();
+        CheckedTextView checkedTextView=(CheckedTextView)findViewById(R.id.checkedTextView);
 
 
     }
